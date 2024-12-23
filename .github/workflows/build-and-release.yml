@@ -28,8 +28,3 @@ jobs:
           python_ver: "3.10.11"
           upload_exe_with_name: "BlumClicker"
           options: '--onefile, --icon "app.ico", --name "BlumClicker"'
-      - name: Run Push to Release
-        uses: TheAhmedGad/push-to-release@main
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          binary_path: ./dist/BlumClicker.exe
