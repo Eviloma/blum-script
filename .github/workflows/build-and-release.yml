@@ -27,7 +27,7 @@ jobs:
           spec: "start.py"
           python_ver: "3.10.11"
           upload_exe_with_name: "BlumClicker"
-          options: '--onefile, --icon "app.ico", --name "Blum Clicker"'
+          options: '--onefile, --icon "app.ico", --name "BlumClicker"'
       - name: Run Push to Release
         uses: TheAhmedGad/push-to-release@main
         with:
