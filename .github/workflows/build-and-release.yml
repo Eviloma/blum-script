@@ -31,5 +31,5 @@ jobs:
       - name: Run Push to Release
         uses: TheAhmedGad/push-to-release@main
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          binary-path: ./dist/BlumClicker.exe
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          binary_path: ./dist/BlumClicker.exe
