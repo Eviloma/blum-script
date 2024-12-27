@@ -11,14 +11,16 @@ stop_thread = False
 interval = 0.001  # 1 millisecond
 
 # Define the target color in BGR space
-target_color_tr_start = np.array([58, 120, 245])
-target_color_tr_end = np.array([78, 140, 255])
+# target_color_tr_start = np.array([66, 72, 104])
+# target_color_tr_end = np.array([72, 75, 108])
+target_color_tr_start = np.array([145, 16, 210])
+target_color_tr_end = np.array([155, 26, 222])
 
-target_color_hr_start = np.array([150, 178, 235])
-target_color_hr_end = np.array([177, 208, 255])
+target_color_hr_start = np.array([174, 2, 234])
+target_color_hr_end = np.array([197, 25, 240])
 
-target_color_bgr_low = np.array([0, 210, 53])
-target_color_bgr_high = np.array([0, 255, 73])
+target_color_bgr_low = np.array([20, 177, 255])
+target_color_bgr_high = np.array([30, 187, 255])
 
 sameCounter = 0
 prevPos = -1, -1
@@ -53,6 +55,7 @@ def click_on_target_elements():
                         if (sameCounter >= 5):
                             sameCounter = 0
                             playClicked = True
+                            time.sleep(0.2)
                             pyautogui.scroll(-300)
                             pyautogui.click(250, 780)
                             break
@@ -66,6 +69,7 @@ def click_on_target_elements():
                 sameCounter +=1
                 if (sameCounter >= 5):
                     sameCounter = 0
+                    time.sleep(0.2)
                     pyautogui.scroll(-300)
                     pyautogui.click(250, 780)     
 
